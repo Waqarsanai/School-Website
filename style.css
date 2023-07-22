@@ -1,0 +1,279 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.quote {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: black;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Global Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .logo {
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+header nav {
+    text-align: center;
+    
+}
+
+header .nav-links {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+header .nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header .nav-links a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #00aaff;
+    
+}
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg?w=740&t=st=1689963739~exp=1689964339~hmac=d5c421c1e245889d2784315d9934b19607e0d5f0ace2c2baad211869c34c89f3");
+    background-size: cover;
+    background-position: center;
+    color: rgb(37, 180, 223);
+    text-align: center;
+    padding: 200px 0;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.About-heading {
+text-align: center;
+color: rgb(37, 180, 223);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.About-container {
+background-image: url("https://img.freepik.com/free-photo/top-view-copy-space-colorful-pencils-green-background_141793-11456.jpg?w=740&t=st=1689964080~exp=1689964680~hmac=4ac745df8472f5b4ab93fa7011043eddf684e5b571b8ebed3634e234980b7a4a");
+color: wheat;
+}
+#Staff {
+background-image: url("");
+color: wheat;
+}
+.Staff-Heading {
+    text-align: center;
+    color: rgb(37, 180, 223);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Principle {
+background-color: #00aaff;
+text-align: center;
+margin-left: 150px;
+margin-right: 200px;
+border-radius: 10px;
+width: 400px;
+}
+.principle-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.clerk {
+    background-color: #2ace4e;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 200px;
+    border-radius: 10px;
+    width: 400px;  
+    padding-bottom: 50px;
+}
+.clerk-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#hero .cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#hero .cta-btn:hover {
+    background-color: #00aaff;
+    cursor: pointer;
+}
+
+/* Gallery Section */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(flex-wrap, minmax(150px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery-images img {
+    width: 600px;
+    height: 400px;
+
+}
+.float {
+float: right;
+}
+
+/* Admissions Section */
+#admissions {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.admissions-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.admissions-content {
+    flex: 0 0 55%;
+}
+
+.admissions-image {
+    flex: 0 0 40%;
+}
+
+.admissions-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admissions-content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.admissions-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.admissions-benefits {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.admissions-benefits li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.admissions-contact {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Contact Section */
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #00aaff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}

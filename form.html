@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admission Form Website</title>
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+background-color: moccasin;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #666;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+  
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admission Form</h1>
+  </header>
+  <main>
+    <form id="admissionForm" action="submit_form.php" method="post">
+      <h2>Personal Information</h2>
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <p class="error" id="nameError"></p>
+      </div>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <p class="error" id="dobError"></p>
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <p class="error" id="genderError"></p>
+      </div>
+      <div>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+        <p class="error" id="addressError"></p>
+      </div>
+      <h2>Parent/Guardian Information</h2>
+      <div>
+        <label for="parentName">Parent/Guardian Name:</label>
+        <input type="text" id="parentName" name="parentName" required>
+        <p class="error" id="parentNameError"></p>
+      </div>
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <p class="error" id="phoneError"></p>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <p class="error" id="emailError"></p>
+      </div>
+      <h2>Education Information</h2>
+      <div>
+        <label for="previousSchool">Previous School:</label>
+        <input type="text" id="previousSchool" name="previousSchool" required>
+        <p class="error" id="previousSchoolError"></p>
+      </div>
+      <div>
+        <label for="grade">Grade Applying For:</label>
+        <input type="text" id="grade" name="grade" required>
+        <p class="error" id="gradeError"></p>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
